@@ -11,9 +11,45 @@ class SignupPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("Signup", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-            TextField(decoration: InputDecoration(labelText: "Name")),
-            TextField(decoration: InputDecoration(labelText: "Email")),
-            TextField(decoration: InputDecoration(labelText: "Password"), obscureText: true),
+            TextField(
+
+              decoration: InputDecoration(
+                hintText: 'your name',
+                prefixIcon: Icon(Icons.person),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+              ),
+            ),
+            TextField(
+
+              decoration: InputDecoration(
+
+                prefixIcon: Icon(Icons.email_rounded),
+                prefixIconColor: Colors.blue,
+                hintText: "yahoo.com",
+                labelText: 'Email',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+
+              ),
+              style: TextStyle(
+
+              ),
+            ),
+            TextField(
+
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.password),
+                prefixIconColor: Colors.blue,
+                labelText: 'Password',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+              ),
+              obscureText: true,
+            ),
             TextField(decoration: InputDecoration(labelText: "Confirm Password"), obscureText: true),
             SizedBox(height: 20),
             ElevatedButton(
