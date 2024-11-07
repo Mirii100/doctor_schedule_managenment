@@ -99,7 +99,7 @@ child: Row(children: [CircleAvatar(radius: 10,backgroundImage: AssetImage(sympto
           Row(
             children: [
               Text("Alexander mirii",style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold,color: Colors.black),),
-              SizedBox(width: 10,),Image.asset("images/image1.png",height: 40,width: 40,),
+              SizedBox(width: 10,),Image.asset("images/image1.jpg",height: 40,width: 40,),
 
             ],
           ),

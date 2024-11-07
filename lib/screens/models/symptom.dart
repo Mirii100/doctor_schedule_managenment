@@ -9,12 +9,12 @@ import 'package:flutter/material.dart';
 });}
 
 List <Symptoms> symptoms=[
-  Symptoms(image: "images/", label: "temperature"),
-  Symptoms(image: "images/", label: "snuffle"),
-  Symptoms(image: "images/", label: "headache"),
-  Symptoms(image: "images/", label: "dizzy"),
-  Symptoms(image: "images/", label: "stomachache"),
-  Symptoms(image: "images/", label: "dia"),
-  Symptoms(image: "images/", label: "weight loss"),
-  Symptoms(image: "images/", label: "cold"),
+  Symptoms(image: "images/image1.jpg", label: "temperature"),
+  Symptoms(image: "images/image2.jpg", label: "snuffle"),
+  Symptoms(image: "images/image3.jpg", label: "headache"),
+  Symptoms(image: "images/image4.jpg", label: "dizzy"),
+  Symptoms(image: "images/image5.jpg", label: "stomachache"),
+  Symptoms(image: "images/image6.jpg", label: "dia"),
+  Symptoms(image: "images/image7.jpg", label: "weight loss"),
+  Symptoms(image: "images/image8.jpg", label: "cold"),
 ];

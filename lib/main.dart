@@ -1,4 +1,5 @@
 import 'package:doctor_schedule/pages/home_page.dart';
+import 'package:doctor_schedule/pages/main_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       home: Scaffold(
-        body: HomePage(),
+        body: MainPage (),
       ),
       routes: {
  

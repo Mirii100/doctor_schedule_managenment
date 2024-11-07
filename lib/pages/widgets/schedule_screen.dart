@@ -2,6 +2,8 @@ import 'package:doctor_schedule/pages/widgets/schedule_items.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../screens/models/schedule.dart';
+
 class ScheduleScreen extends StatelessWidget {
   const ScheduleScreen({super.key});
 
@@ -33,7 +35,7 @@ class ScheduleScreen extends StatelessWidget {
               ),SizedBox(height: 10,),
               Text("Future visit",style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold,letterSpacing:-.4, ),),
               SizedBox(height:20 ,),
-              ...List.generate(futures.length, (index)=>Padding(padding: EdgeInsets.only(bottom: 15),child: ScheduleItems(schedule: future[index],),))
+              ...List.generate(futures.length, (index)=>Padding(padding: EdgeInsets.only(bottom: 15),child: ScheduleItems(schedule: futures[index],),))
 
             ],),),
             Center(child: Text("completed",style: TextStyle(fontSize: 24,color: Colors.purple,),),),

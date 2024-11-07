@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../screens/models/schedule.dart';
 
@@ -16,7 +17,7 @@ class ScheduleItems extends StatelessWidget {
       child: Column(children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [Column(
-        crossAxisAlignment: CrossAxisAlignment.start,children: [Text("Dr.${schedules.doctor.name}",style: TextStyle(color: Colors.black,fontSize: 18,letterSpacing: -.5,fontWeight: FontWeight.bold,),
+        crossAxisAlignment: CrossAxisAlignment.start,children: [Text("Dr.${schedule.doctor.name}",style: TextStyle(color: Colors.black,fontSize: 18,letterSpacing: -.5,fontWeight: FontWeight.bold,),
       ),SizedBox(height:2 ,),Text(schedule.doctor.specialist,style: TextStyle(color: Colors.grey,fontSize: 15,letterSpacing: -.5,),),
       ],
       ),
@@ -33,7 +34,7 @@ class ScheduleItems extends StatelessWidget {
          Text(DateFormat("d/mm/y").format(schedule.time),style: TextStyle(color: Colors.black,letterSpacing: -.5,),) ,
         ],
         ),SizedBox(width: 15,),Row(children: [Icon(Icons.access_time_filled,color:Colors.grey ,),
-        SizedBox(width: 5,),Text(DateFormat("jm").format(schedule.time),style: TextStyle(color: Colors.black,letterSpacing: 0,),)],),
+        SizedBox(width: 5,),Text(DateFormat("d/mm/y").format(schedule.time),style: TextStyle(color: Colors.black,letterSpacing: 0,),)],),
           SizedBox(width: 15,),Row(children: [Container(height: 10,width: 10,decoration: BoxDecoration(
            shape: BoxShape.circle,color: Colors.green,
           ),
