@@ -18,7 +18,14 @@ class Schedule {
   });
   List<Schedule> schedules=[
  Schedule(status: "status", doctor: List.empty(), time: ""),
-  Schedule(status: "status", doctor: List.empty(), time: "")
+  Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
+    Schedule(status: "status", doctor: List.empty(), time: ""),
 ];
 
   List<String>tabs=['upcomming','completed','canceled'];
@@ -28,5 +35,10 @@ List<Schedule>nearest=schedules
 DateFormat('d/MM/y').format(element.time)==DateFormat('d/MM/y').format(DateTime.now(),),
 )
     .toList();
+List<Schedule> futures=schedules
+  .where((element)=>
+DateFormat('d/MM/y').format(element.time)!=DateFormat('d/MM/y').format(DateTime.now(),),
+)
+      .toList();
 
   static DateFormat(String s) {}

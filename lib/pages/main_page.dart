@@ -1,4 +1,6 @@
 import 'package:doctor_schedule/pages/doctorHomescreen.dart';
+import 'package:doctor_schedule/pages/widgets/schedule_screen.dart';
+import 'package:doctor_schedule/screens/models/schedule.dart';
 import 'package:flutter/material.dart';
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -12,7 +14,7 @@ class _MainPageState extends State<MainPage> {
   final List pages=[
     const Doctorhomescreen(),
     const Scaffold(),
-    const Scaffold(),
+    const ScheduleScreen(),
     const Scaffold(),
   ];
   @override
