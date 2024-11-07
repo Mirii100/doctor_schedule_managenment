@@ -2,6 +2,9 @@ import 'package:doctor_schedule/pages/home_page.dart';
 import 'package:doctor_schedule/pages/main_page.dart';
 import 'package:flutter/material.dart';
 
+import 'authenication/login.dart';
+import 'authenication/welcomeScreen.dart';
+
 void main() {
   runApp( MyApp());
 }
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       home: Scaffold(
-        body: MainPage (),
+        body: WelcomePage(),
       ),
       routes: {
  

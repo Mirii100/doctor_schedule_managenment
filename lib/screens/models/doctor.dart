@@ -4,7 +4,7 @@ class Doctor{
   final int doctorId;
 
   late final String name,specialist,about,location,image;
-  late final price,color;
+  late final  int price,color;
   late final double rate;
   final List<Review> reviews;
 
@@ -23,32 +23,32 @@ class Doctor{
 
 List<Doctor> doctors=[
   Doctor(doctorId: 001,rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: [],),
+      name:"Alex",
+      image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", about: "about", location: "location", specialist: "Neurologists", price: 9, color: 0xFF665ACF, reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
   Doctor(doctorId: 001,
   rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: []),
+      name: "Njuguna",
+      image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", about: "about", location: "location", specialist: "Neurologists", price: 9, color: 0xFF665ACF,reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
   Doctor(doctorId: 001,
       rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: []),
+      name: "Mirii",
+      image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", about: "about", location: "location", specialist: "Neurologists", price: 9, color: 0xFF665ACF,reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
   Doctor(doctorId: 001,
       rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: []),
+      name: "Mirii Alex",
+      image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", about: "about", location: "location", specialist: "Neurologists", price: 9, color: 0xFF665ACF, reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
   Doctor(doctorId: 001,
       rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: []),
+      name: "james",
+      image: "https://www.freepik.com/free-photos-vectors/colourful", about: "about", location: "location", specialist: "sNeurologists", price: 9, color: 0xFF665ACF, reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
   Doctor(doctorId: 001,
       rate: 1.0,
-      name: "name",
-      image: "image", about: "about", location: "location", specialist: "specialist", price: 9, color: "color", reviews: []),
+      name: "gideon",
+      image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", about: "about", location: "location", specialist: "Neurologists", price: 9, color: 0xFF665ACF, reviews: [reviews[0], reviews[1], reviews[2], reviews[3],reviews[4]],),
 
 ];

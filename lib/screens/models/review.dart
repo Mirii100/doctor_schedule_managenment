@@ -17,31 +17,31 @@ class Review {
 
 }
 List<Review> reviews=[
-  Review(id: 1, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
-  Review(id: 2, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 1, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 2, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 3, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 3, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 4, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 4, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 5, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 5, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 7, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 7, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 6, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 6, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 8, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 8, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 11, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 11, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 9, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 9, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 10, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 10, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 12, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 12, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
-  Review(id: 20, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
-  Review(id: 17, rate: 6, fullname: "Alexander", image: "https://image from internet", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 20, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
+  Review(id: 17, rate: 6, fullname: "Alexander", image: "https://www.linkedin.com/in/alex-njuguna-b4550124a/", comment: "comment", date: "date", color:0xFFffcdcf),
 
 
 

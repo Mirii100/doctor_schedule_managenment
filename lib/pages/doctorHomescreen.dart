@@ -103,7 +103,7 @@ child: Row(children: [CircleAvatar(radius: 10,backgroundImage: AssetImage(sympto
 
             ],
           ),
-CircleAvatar(radius: 28,backgroundImage: NetworkImage("http//"),),
+CircleAvatar(radius: 28,backgroundImage: NetworkImage("https://www.linkedin.com/in/alex-njuguna-b4550124a/"),),
       ],),
 
       );
