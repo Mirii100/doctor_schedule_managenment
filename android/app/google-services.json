@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "189274738420",
+    "project_id": "doctorschedule-47354",
+    "storage_bucket": "doctorschedule-47354.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189274738420:android:5ac65b6de16e89b1f9d8a1",
+        "android_client_info": {
+          "package_name": "com.example.doctor_schedule"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvRJ58wseAWmaB-9v4JGmxteTG63U0qZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
