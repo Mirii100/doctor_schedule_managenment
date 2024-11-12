@@ -53,20 +53,25 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Color(0xFF0F1231), // Dark blue background
       body: Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Login", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            Text("Login", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFFFFFFFF))), // White text
+            SizedBox(height: 20),
             TextField(
               controller: _emailController,
               decoration: InputDecoration(
                 labelText: "Email",
-                prefixIcon: Icon(Icons.email),
+                prefixIcon: Icon(Icons.email, color: Color(0xFFFFFFFF)), // White icon
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
+                ),
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
                 ),
               ),
             ),
@@ -75,19 +80,31 @@ class _LoginPageState extends State<LoginPage> {
               controller: _passwordController,
               decoration: InputDecoration(
                 labelText: "Password",
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: Icon(Icons.lock, color: Color(0xFFFFFFFF)), // White icon
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
+                ),
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
                 ),
               ),
               obscureText: true,
             ),
             SizedBox(height: 20),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF4E4E6A), // Dark purple button color
+              ),
               onPressed: _login, // Call login function
-              child: Text("Login"),
+              child: Text("Login", style: TextStyle(
+                color: Color(0xFFFFFFFF), // White text
+              )),
             ),
             TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Color(0xFF4E4E6A), // Dark purple text color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -96,9 +113,11 @@ class _LoginPageState extends State<LoginPage> {
               },
               child: Text("Forgot Password?"),
             ),
-            // Add the "Sign Up" option at the bottom
             SizedBox(height: 10),
             TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Color(0xFF4E4E6A), // Dark purple text color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,

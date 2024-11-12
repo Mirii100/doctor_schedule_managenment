@@ -66,34 +66,42 @@ class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Color(0xFF0F1231), // Dark blue background
 
       body: Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Signup", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            Text("Signup", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFFFFFFFF))), // White text
+            SizedBox(height: 20),
             TextField(
               controller: _nameController,
               decoration: InputDecoration(
                 hintText: 'Your Name',
-                prefixIcon: Icon(Icons.person,semanticLabel: "your name ",),
-                labelStyle: TextStyle(backgroundColor: Colors.blue,color: Colors.white),
+                prefixIcon: Icon(Icons.person, semanticLabel: "your name ", color: Color(0xFFFFFFFF)), // White icon
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
                 ),
               ),
             ),
+            SizedBox(height: 20),
             TextField(
               controller: _emailController,
               decoration: InputDecoration(
-                prefixIcon: Icon(Icons.email_rounded),
+                prefixIcon: Icon(Icons.email_rounded, color: Color(0xFFFFFFFF)), // White icon
                 hintText: "email@example.com",
                 labelText: 'Email',
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
+                ),
                 border: OutlineInputBorder(
-
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
                 ),
               ),
             ),
@@ -101,10 +109,15 @@ class _SignupPageState extends State<SignupPage> {
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: Icon(Icons.lock, color: Color(0xFFFFFFFF)), // White icon
                 labelText: 'Password',
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
+                  backgroundColor: Color(0xFF4E4E6A), // Dark purple background
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
                 ),
               ),
               obscureText: true,
@@ -113,20 +126,32 @@ class _SignupPageState extends State<SignupPage> {
             TextField(
               controller: _confirmPasswordController, // Controller for confirm password
               decoration: InputDecoration(
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: Icon(Icons.lock, color: Color(0xFFFFFFFF)), // White icon
                 labelText: 'Confirm Password',
+                labelStyle: TextStyle(
+                  color: Color(0xFFFFFFFF), // White label text
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
+                  borderSide: BorderSide(color: Color(0xFF4E4E6A)), // Dark purple border
                 ),
               ),
               obscureText: true,
             ),
             SizedBox(height: 20),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF4E4E6A), // Dark purple button color
+              ),
               onPressed: _signup, // Call signup function
-              child: Text("Sign Up"),
+              child: Text("Sign Up", style: TextStyle(
+                color: Color(0xFFFFFFFF), // White text
+              )),
             ),
             TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Color(0xFF4E4E6A), // Dark purple text color
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
