@@ -66,6 +66,8 @@ class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
+
       body: Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
@@ -76,7 +78,8 @@ class _SignupPageState extends State<SignupPage> {
               controller: _nameController,
               decoration: InputDecoration(
                 hintText: 'Your Name',
-                prefixIcon: Icon(Icons.person),
+                prefixIcon: Icon(Icons.person,semanticLabel: "your name ",),
+                labelStyle: TextStyle(backgroundColor: Colors.blue,color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -89,10 +92,12 @@ class _SignupPageState extends State<SignupPage> {
                 hintText: "email@example.com",
                 labelText: 'Email',
                 border: OutlineInputBorder(
+
                   borderRadius: BorderRadius.circular(30.0),
                 ),
               ),
             ),
+            SizedBox(height: 20),
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
@@ -104,6 +109,7 @@ class _SignupPageState extends State<SignupPage> {
               ),
               obscureText: true,
             ),
+            SizedBox(height: 20),
             TextField(
               controller: _confirmPasswordController, // Controller for confirm password
               decoration: InputDecoration(

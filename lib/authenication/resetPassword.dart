@@ -100,7 +100,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
               ),
               readOnly: true, // Make it read-only so the user cannot change the email
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 20),
             // Password TextField
             TextField(
               controller: _passwordController,
@@ -113,7 +113,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
               ),
               obscureText: true,
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 20),
             // Confirm Password TextField
             TextField(
               controller: _confirmPasswordController,

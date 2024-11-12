@@ -37,7 +37,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: WelcomePage(),
+        body: Container(
+          decoration: BoxDecoration(
+            image:DecorationImage(
+                image:AssetImage( "images/image7.jpg"),
+            fit: BoxFit.cover),
+
+          ),
+            child: WelcomePage()),
+
       ),
       routes: {
         // Define your routes here if any
